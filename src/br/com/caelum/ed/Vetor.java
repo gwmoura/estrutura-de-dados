@@ -7,9 +7,11 @@ import java.util.Arrays;
  */
 public class Vetor {
     private Aluno[] alunos = new Aluno[100];
+    private int totalDeAlunos = 0;
 
     public void adiciona(Aluno aluno) {
-
+        this.alunos[this.totalDeAlunos] = aluno;
+        this.totalDeAlunos++;
     }
 
     public void adiciona(int posicao, Aluno aluno) {
@@ -17,7 +19,7 @@ public class Vetor {
     }
 
     public Aluno pega(int posicao) {
-
+        return new Aluno();
     }
 
     public void remove(int posicao) {
@@ -25,11 +27,11 @@ public class Vetor {
     }
 
     public boolean contem (Aluno aluno) {
-
+        return false;
     }
 
     public int tamanho() {
-
+        return this.alunos.length;
     }
 
     public String toString(){
